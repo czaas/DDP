@@ -1,0 +1,90 @@
+<?php if( $section == dev): ?>
+This CSS document is has php in  it for optimization. It will only print necessary information in order for the page to load. 
+
+These instructions should never be printed to public. The Header grabs
+all the CSS and with (php if) statements it filters through what will print rather than sending the entire document for every page. 
+
+Importnt Colors
+Link: #004467
+Link on or hover: #051826
+
+All the css starts printing after the endif; statement.
+<?php endif; ?>
+body { background: #fff; color: #383e42; } 
+.nobreak { white-space: nowrap !important;}
+h1, h2,h3,h4,h5,h6 { font-weight: 400; }
+a:hover { -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; transition-duration: 0.2s; }
+/*** Header Style ***/
+header .name { font-weight: 400; font-size: 18px; color: #0000ff; }
+header .slogan { font-size: 14px; color: #0e436a; color: #0000ff;}
+.name { text-transform: uppercase; font-weight: 300; }
+
+nav { width: 100%; height: 44px; background: url(<?php echo $eweb ?>/images/nav-bg.png) repeat-x left; font-size: 14px; height: 44px; margin: 2em 0; }
+nav #gnav { width: 100%; max-width: 1000px; margin: 0 auto; text-align: right; } 
+nav a { background: #004467; display: inline-block; text-decoration: none; color: #fff; height: 44px; padding: 14px; text-align: center; line-height: 18px; width: 25%; max-width: 150px; margin-left: -4px; border-left: 1px solid #000; margin-bottom: 1px solid #000; }
+nav a:first-child { margin-left: 0; border-left: none; }
+nav a:last-child { border-right: 1px solid #004467; }
+nav a:hover, nav a.on { background: #051826; }
+nav a.on { color: #eee; } 
+
+@media(max-width: 540px){
+	nav #gnav a { width: 25%; }
+}
+@media(min-width: 500px){
+	.sloganName { padding: 30px 0 0 50px; }
+	header .name { font-size: 25px;  }
+}
+@media(min-width: 700px){
+	.sloganName { padding: 30px 0 0 20%; }
+    header .name { font-size: 36px; } 
+    header .slogan { font-size: 22px; }
+}
+<?php if($section == "home" ) : ?>
+/*** HM custom style ***/
+.description h2 { text-transform: uppercase; font-weight: 300; margin-bottom: 0; color:#004467; text-align: center; }
+#showCase img { border: 1px solid #d4d8eb; box-shadow: 0px 0px 6px rgba(0,0,0,0.3); transition: .2s; }
+#showCase img:hover { box-shadow: 0px 0px 6px rgba(0,0,0,0.5); }
+<?php endif; ?>
+<?php if(($section == "home") || ($section == "about")): ?>
+#cta a { width: 80%; height: 50px; background: #004467; color: #fff; line-height: 50px; display: block; margin: 30px auto; text-align: center; text-decoration: none;  }
+#cta a:hover {  background: #051826; }
+#cta a i { float: right; font-size: 30px; line-height: 50px; position: relative; right: 20px; } 
+<?php endif; ?>
+<?php if($section == "about" ) : ?>
+a { text-decoration: none; }
+#aboutImage { text-align: center; }
+img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+.imageTitle { background: url(<?php echo $eweb ?>/images/footer-bg.png)repeat-x top left; background-color: rgba(0, 68, 103, 1); color: #fff; margin: 0 auto; max-width: 352px; text-align: left; padding: 3px 5px; text-decoration: none; font-size: 14px; font-weight: 300;  }
+a:hover img { opacity: 0.8; }
+a:hover .imageTitle { -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; transition-duration: 0.2s; background: url(<?php echo $eweb ?>/images/footer-bg.png)repeat-x top left; background-color: #051826; }
+<?php endif; ?>
+<?php if($section == "portfolio" ) : ?>
+#portfolioList, #portfolioList a, #portfolioList a:visited { color: #fff; font-size: 14px; }
+#portfolioList { margin: 30px auto;}
+#portfolioList div { height: 50px; text-align: center; margin: 0 0 30px; line-height: 50px; color: #000; background-color: #ddd; }
+#portfolioList a div { background: #004467; color: #fff; } 
+#portfolioList a div:hover { -webkit-transition-duration: 0.2s; -moz-transition-duration: 0.2s; transition-duration: 0.2s; background: #051826; color: #fff; }
+#portfolioList i { float: right; line-height: 50px; }
+@media(max-width: 640px){ 
+#portfolioList div:nth-child(odd) { border-right: 10px solid #fff; }
+}
+@media(min-width: 641px){ 
+#portfolioList div { border-right: 7px solid #fff; border-left: 7px solid #fff; }
+}
+<?php endif; ?>
+<?php if($section == "contact") : ?>
+input { padding: 15px; margin: 0 0 28px 0;  display: block; width: 100%; font-size: 16px; outline: 1px solid #666; }
+textarea { resize: none; width: 100%; padding: 15px; font-size: 16px; outline: 1px solid #666; }
+input[type=submit] { height: 50px; background: #004467; color: #fff; border: 0; transition-duration: 0.2s;  }
+input[type=submit]:hover { background: #051826; cursor: pointer; }
+<?php endif ?>
+
+/*** Footer ***/
+footer { background: url(<?php echo $eweb ?>/images/footer-bg.png)repeat-x top left; background-color: #2f2f2f; width: 100%; margin-top: 30px; padding: 50px 0; color: #fff; }
+#nap { margin-bottom: 20px; display: block; }
