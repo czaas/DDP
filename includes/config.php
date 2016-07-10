@@ -1,1 +1,1 @@
-<?php	$eweb = "http://www.ddpbim.com"; ?>
+<?php $eweb = "http://ddpbim.com"; ?>
