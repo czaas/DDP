@@ -7,9 +7,6 @@
 ?>
 		<div class="row">
 			<div class="columns small-12">
-				<img src="images/hm-banner.jpg" alt="Revit BIM draft"><br />
-			</div>
-			<div class="columns small-12">
 				<div class="row">
 					<div class="columns small-12">
 						<h1>Error 404</h1>
