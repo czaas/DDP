@@ -1,4 +1,4 @@
-<?php $eweb = "http://localhost:8888/"; ?>
+<?php  require_once('config.php'); ?>
 <!--http://ddpcad.com-->
 <!doctype html>
 <html lang="en">
@@ -52,7 +52,6 @@
 			<a href="<?php echo $eweb ?>/" class="<?php echo ($section == "home" ? "on" : "")?>">Home</a> 
 			<a href="<?php echo $eweb ?>/about/" class="<?php echo ($section == "about" ? "on" : "")?>">About DDP</a> 
 			<a href="<?php echo $eweb ?>/portfolio/" class="<?php echo ($section == "portfolio" ? "on" : "")?>">Portfolio</a> 
-			<a href="<?php echo $eweb ?>/contact/" class="<?php echo ($section == "contact" ? "on" : "")?>">Contact</a>
 			</div>
 		</nav>
 	</header>

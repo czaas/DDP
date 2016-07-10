@@ -22,7 +22,6 @@
             <div class="columns small-12" id="cta">
 						<a href="<?php echo $eweb ?>/">Home<i class="fa fa-caret-right"></i></a>
 						<a href="<?php echo $eweb ?>/portfolio/">View Our Portfolio<i class="fa fa-caret-right"></i></a>
-						<a href="<?php echo $eweb ?>/contact/">Contact Us <i class="fa fa-caret-right"></i></a>
             </div>
         </div>
         
