@@ -14,7 +14,7 @@
 					<div class="columns small-12 medium-6">
 						<div class="description">
 							<h2>Fast, Accurate, &amp; <span class="nobreak">Cost Effective</span></h2>
-							<p>Owner, Dave Jones, has been been providing drafting services for the commercial glazing industry since 1969.</p>
+							<p>Owner, Dave Jones, has been been providing drafting services for the commercial glazing industry since 1991.</p>
 							<div class="row" id="showCase">
 								<div class="columns small-6"><a href="<?php echo $eweb ?>/images/hm-stadium-lg.jpg" class="fancyImage"><img src="images/hm-stadium.jpg" alt="Revit Render of San Fransisco 49ers Stadium by Dave Jones"></a></div>
                                 <div class="columns small-6"><a href="<?php echo $eweb ?>/images/hm-sj-health-center.jpg" class="fancyImage"><img src="images/hm-sjsh.jpg" alt="Revit render of San Jose Health Center by Dave Jones"></a></div>
