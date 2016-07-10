@@ -1,1 +1,1 @@
-<?php	$eweb = "http://localhost:8000"; ?>
+<?php	$eweb = "http://www.ddpbim.com"; ?>
