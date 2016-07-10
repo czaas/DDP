@@ -1,6 +1,4 @@
-<?php // $eweb = "http://localhost:8888/"; 
-	require_once('config.php');
-?>
+<?php  require_once('config.php'); ?>
 <!--http://ddpcad.com-->
 <!doctype html>
 <html lang="en">
