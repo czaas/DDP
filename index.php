@@ -24,7 +24,6 @@
 					<div class="columns small-12 medium-6" id="cta">
 						<a href="<?php echo $eweb ?>/about/">Learn More about DDP <i class="fa fa-caret-right"></i></a>
 						<a href="<?php echo $eweb ?>/portfolio/">View Our Portfolio <i class="fa fa-caret-right"></i></a>
-						<a href="<?php echo $eweb ?>/contact/">Contact Us <i class="fa fa-caret-right"></i></a>
 					</div>
 				</div>
 			</div>
